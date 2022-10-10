@@ -1,21 +1,21 @@
 const index = (req, res, next) => {
-    res.render('index', { title: 'Express',nama: 'Koyori'});  //controller
+    res.render('index', { title: 'Express',nama: 'Nissan' });   //ini controllers
   };
 
-  const demo = (req, res, next) => {
-    res.render('index', { title: 'Express',nama: 'Matthew Vincentius'});
-  };
+const show = (res, req, next) => {
+    res.render('index', { title: 'Express',nama: 'Nissan' });
+};
 
-const show = (req, res, next) => {
-    res.render('index', { title: 'Express',nama: 'Matthew Vincentius'});
-  };
+const demo = (res, req, next) => {
+    res.render('index', { title: 'Express',nama: 'Nissan' });
+};
 
-const edit = (req, res, next) => {
-    res.render('index', { title: 'Express',nama: 'Matthew Vincentius'});
-  };
+const edit = (res, req, next) => {
+    res.render('index', { title: 'Express',nama: 'Nissan' });
+};
 
-const destroy = (req, res, next) => {
-    res.render('index', { title: 'Express',nama: 'Matthew Vincentius'});
-  };
+const destroy = (res, req, next) => {
+    res.render('index', { title: 'Express',nama: 'Nissan' });
+};
 
-module.exports = {index, show, edit, destroy, demo}
+module.exports = {index, show, edit, destroy,demo}
